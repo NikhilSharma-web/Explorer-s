@@ -39,7 +39,7 @@ if (form) {
 
 async function loadReviews() {
     try {
-        const res = await fetch("http://localhost:5000/api/reviews");
+        const res = await fetch("/api/reviews");
         const reviews = await res.json();
         container.innerHTML = "";
 
