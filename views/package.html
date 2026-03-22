@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Package Details</title>
+
+    <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="stylesheet" href="/CSS/package.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Volkhov:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="icon" type="image/png" href="/Images/logo.png">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="/Images/logo.png" alt="Logo Image">
+            <span class="logo-orange">Explorer's</span>
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="/">Home</a></li>
+            <li class="dropdown">
+                <a href="#" id="destinationLink">
+                    Destinations <span class="arrow">▼</span>
+                </a>
+                <ul class="dropdown-menu" id="dropdownMenu">
+                    <li><a href="/package?place=sikkim">Sikkim</a></li>
+                    <li><a href="/package?place=darjeeling">Darjeeling</a></li>
+                    <li><a href="/package?place=Sikkim-Darjeeling">Sikkim-Darjeeling</a></li>
+                    <li><a href="/package?place=Gangtok-pelling">Gangtok-Pelling</a></li>
+                    <li><a href="/package?place=North-Sikkim">North Sikkim</a></li>
+                    <li><a href="/package?place=Andaman">Andaman</a></li>
+                    <li><a href="/package?place=Bhutan">Bhutan</a></li>
+                    <li><a href="/package?place=Thailand">Thailand</a></li>
+                </ul>
+            </li>
+            <li><a href="/contact">Contact</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/review">Review</a></li>
+        </ul>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+    <div class="package-hero">
+        <div class="steps-box">
+            <p class="steps-title">Easy and Fast</p>
+            <h2>Book your Next Trip in 3 Steps</h2>
+
+            <div class="step">
+                <h3>Choose Destination</h3>
+                <p>Choose your favourite place. No matter where you travel inside the World.</p>
+            </div>
+
+            <div class="step">
+                <h3>Contact Our Consultant</h3>
+                <p>After find your perfect spot, make your payment and get ready to travel.</p>
+            </div>
+
+            <div class="step">
+                <h3>Reach Airport/Railway St /Bus on Selected Date</h3>
+                <p>Lastly, you have to arrive on time and enjoy the vacation.</p>
+            </div>
+        </div>
+
+        <div>
+            <img id="packageImage" src="" alt="">
+        </div>
+    </div>
+
+    <div class="packages-section">
+        <h2 id="packageTitle"></h2>
+        <div id="packageList" class="package-container"></div>
+    </div>
+    <div id="footer"></div>
+    <a href="https://wa.me/916297142056" target="_blank" class="whatsapp-float">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+</body>
+<script src="/JS/script.js"></script>
+<script src="/JS/package.js"></script>
+
+</html>

@@ -1,0 +1,200 @@
+body {
+    font-family: 'Rubik', sans-serif;
+    background: #f8f9fb;
+}
+
+h1,
+h2 {
+    font-family: 'Volkhov', serif;
+}
+
+.package-hero {
+    padding: 50px 8%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.package-hero img {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+}
+
+.steps-title {
+    color: orange;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.steps-box h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.step {
+    margin-bottom: 25px;
+}
+
+.step h3 {
+    margin-bottom: 5px;
+}
+
+.packages-section {
+    padding: 80px 8%;
+}
+
+.packages-section h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* Container */
+.package-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+    margin: 40px 0;
+}
+
+/* Card */
+.package-card {
+    background: white;
+    padding: 25px;
+    border-radius: 18px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Hover Effect */
+.package-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* Header */
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-header h3 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.price {
+    background: linear-gradient(135deg, #ff7a00, #ffb347);
+    color: white;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-weight: 600;
+}
+
+/* Duration */
+.duration {
+    margin: 10px 0 20px;
+    color: #777;
+    font-weight: 500;
+}
+
+/* Day Plans */
+.day-plan {
+    background: #f9f9f9;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.day-plan strong {
+    color: #ff7a00;
+}
+
+/* Button */
+.book-btn {
+    margin-top: 15px;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(135deg, #ff7a00, #ffb347);
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.book-btn:hover {
+    opacity: 0.85;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 992px) {
+
+    .package-hero {
+        gap: 40px;
+        padding: 80px 6%;
+    }
+
+    .steps-box h2 {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .package-hero {
+        grid-template-columns: 1fr;
+        /* 2 column -> 1 column */
+        text-align: center;
+        padding: 60px 5%;
+    }
+
+    .package-hero img {
+        margin-top: 30px;
+    }
+
+    .steps-box h2 {
+        font-size: 26px;
+    }
+
+    .step h3 {
+        font-size: 18px;
+    }
+
+    .packages-section {
+        padding: 60px 5%;
+    }
+
+    .includes-list li {
+        font-size: 14px;
+        padding: 12px 15px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .package-hero {
+        padding: 40px 5%;
+    }
+
+    .steps-title {
+        font-size: 14px;
+    }
+
+    .steps-box h2 {
+        font-size: 22px;
+    }
+
+    .step p {
+        font-size: 14px;
+    }
+
+    .includes-list li {
+        font-size: 13px;
+    }
+}
