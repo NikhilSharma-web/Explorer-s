@@ -19,7 +19,7 @@ if (form) {
         };
 
         try {
-            const res = await fetch("http://localhost:5000/api/reviews", {
+            const res = await fetch("/api/reviews", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"
